@@ -503,6 +503,7 @@ img {
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background-color: transparent;
   padding: 8px 16px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-subscribe-field::placeholder {
@@ -534,6 +535,7 @@ img {
   letter-spacing: 0.04em;
   text-align: center;
   color: #fff;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-subscribe-btn-img {
@@ -592,6 +594,7 @@ img {
 
 .modal-closeimg {
   fill: #2e2f42;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-closebtn {
@@ -605,6 +608,7 @@ img {
   border: 1px solid rgba(0, 0, 0, 0.1);
   margin-left: auto;
   margin-bottom: 24px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-closebtn:hover,
@@ -644,6 +648,7 @@ img {
   border-radius: 4px;
   background-color: transparent;
   padding-left: 38px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-input:focus {
@@ -670,6 +675,7 @@ img {
   text-align: center;
   color: #fff;
   margin: 0 auto;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-submit-btn:hover,
@@ -709,6 +715,9 @@ img {
   border: 1px solid rgba(46, 47, 66, 0.4);
   margin-right: 8px;
   fill: transparent;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-checkbox:checked + .modal-checkbox-text .modal-checkbox-custom {
@@ -727,6 +736,7 @@ img {
   margin-bottom: 16px;
   padding: 8px 16px 8px 16px;
   outline: transparent;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-textarea:focus {
@@ -749,4 +759,5 @@ img {
   left: 16px;
   bottom: 50%;
   transform: translateY(50%);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
