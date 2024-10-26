@@ -504,13 +504,17 @@ img {
   background-color: transparent;
   padding: 8px 16px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: #ffffff;
 }
 
 .footer-subscribe-field::placeholder {
   font-size: 12px;
   line-height: 2;
   letter-spacing: 0.04em;
-  color: #fff;
+  color: #ffffff;
 }
 
 .footer-subscribe-form {
@@ -521,14 +525,13 @@ img {
 .footer-subscribe-button {
   border-radius: 4px;
   padding: 8px 24px;
-  width: 165px;
+  min-width: 165px;
   height: 40px;
   background-color: #4d5ae5;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  gap: 16px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -536,10 +539,13 @@ img {
   text-align: center;
   color: #fff;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+  border: none;
 }
 
 .footer-subscribe-btn-img {
   fill: white;
+  margin-left: 16px;
 }
 
 .footer-subscribe-button:hover,
@@ -574,7 +580,7 @@ img {
 }
 
 .modal {
-  padding: 24px;
+  padding: 72px 24px 24px 24px;
   width: 408px;
   min-height: 584px;
   background-color: #fcfcfc;
@@ -598,22 +604,28 @@ img {
 }
 
 .modal-closebtn {
+  position: absolute;
+  top: 24px;
+  right: 24px;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 24px;
   height: 24px;
   border-radius: 50%;
-  fill: #e7e9fc;
+  background-color: #e7e9fc;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  margin-left: auto;
-  margin-bottom: 24px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 0;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-closebtn:hover,
 .modal-closebtn:focus {
   background-color: #404bbf;
+  border: none;
 }
 
 .modal-closebtn:hover .modal-closeimg,
@@ -733,7 +745,6 @@ img {
   background-color: transparent;
   resize: none;
   min-height: 120px;
-  margin-bottom: 16px;
   padding: 8px 16px 8px 16px;
   outline: transparent;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -752,6 +763,14 @@ img {
 .modal-input-container {
   position: relative;
   margin-bottom: 8px;
+}
+
+.modal-element-container {
+  margin-bottom: 8px;
+}
+
+.modal-textarea-container {
+  margin-bottom: 16px;
 }
 
 .modal-input-img {
